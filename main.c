@@ -1,21 +1,21 @@
 #include <stdio.h>
 #define LIM 1000
 
-void str_copy(char s2[], char s1[]);
+void expand(char s2[], char s1[]);
 
 
 int main()
 {
     char s1[LIM]="--!---0---D----F---a------de----------g----~-----";
     char s2[LIM]=" ";
-    str_copy(s2, s1);
+    expand(s2, s1);
 
     printf("%s\n", s2);
 
     return 0;
 }
 
-void str_copy(char s2[], char s1[])
+void expand(char s2[], char s1[])
 {
     int i,j,k,n;  
     for(i=0, j=0; s1[i]!='\0'; ++i, ++j)
